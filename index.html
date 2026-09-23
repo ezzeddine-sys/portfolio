@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Mercer | Cybersecurity SOC Analyst</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=DM+Sans:wght@400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrixCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>AM<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certs</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-greeting">Hello, I'm</div>
+            <h1 class="hero-name glitch" data-text="ALEX MERCER">ALEX MERCER</h1>
+            <div class="typewriter-wrapper">
+                <span class="typewriter" id="typewriter"></span>
+                <span class="cursor">_</span>
+            </div>
+            <p class="hero-desc">Cybersecurity SOC Analyst | Threat Hunter | Incident Responder</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#" class="btn btn-secondary" id="downloadCV">Download CV <i class="fas fa-download"></i></a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-count="5">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="8">0</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-count="50">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Threats Investigated</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span>SCROLL</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-container">
+            <h2 class="section-title">// About Me</h2>
+            <div class="about-grid">
+                <div class="about-photo-wrapper">
+                    <div class="photo-placeholder">
+                        <i class="fas fa-user-secret"></i>
+                        <span>Profile Photo</span>
+                    </div>
+                    <div class="photo-frame"></div>
+                </div>
+                <div class="about-text">
+                    <h3>Cybersecurity Professional & SOC Analyst</h3>
+                    <p>
+                        I'm a passionate cybersecurity professional with 5+ years of experience working in Security Operations Centers,
+                        specializing in threat detection, incident response, and digital forensics. My journey in cybersecurity started
+                        with a deep curiosity about how systems work — and how they can break.
+                    </p>
+                    <p>
+                        Currently, I monitor and analyze security events across enterprise environments using industry-leading SIEM
+                        platforms like Splunk and IBM QRadar. I've led threat hunting operations, conducted digital forensic
+                        investigations, and developed automated detection rules that have identified sophisticated threat actors.
+                    </p>
+                    <p>
+                        When I'm not in the SOC, you'll find me contributing to open-source security tools, creating CTF challenges,
+                        writing technical blog posts, or participating in bug bounty programs. I believe in continuous learning
+                        and giving back to the cybersecurity community.
+                    </p>
+                    <div class="about-cta">
+                        <a href="#" class="btn btn-primary" id="downloadCV2">
+                            <i class="fas fa-file-download"></i> Download CV
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-container">
+            <h2 class="section-title">// Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>SIEM Platforms</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="95%"></div>
+                    </div>
+                    <p>Splunk, QRadar, ELK Stack, Graylog</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-crosshairs"></i></div>
+                    <h3>Threat Hunting</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="90%"></div>
+                    </div>
+                    <p>Sigma Rules, YARA, MITRE ATT&CK</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Incident Response</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="88%"></div>
+                    </div>
+                    <p>NIST IR Framework, SOAR, Playbooks</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Network Forensics</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="85%"></div>
+                    </div>
+                    <p>Wireshark, TCPDump, Zeek, NetFlow</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                    <h3>Python Scripting</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="92%"></div>
+                    </div>
+                    <p>Automation, Scapy, Malware Analysis</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-bug"></i></div>
+                    <h3>Vulnerability Assessment</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="87%"></div>
+                    </div>
+                    <p>Nessus, OpenVAS, Burp Suite, Metasploit</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-search"></i></div>
+                    <h3>OSINT</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="82%"></div>
+                    </div>
+                    <p>Maltego, Shodan, theHarvester, Recon-ng</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <h3>Cloud Security</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="78%"></div>
+                    </div>
+                    <p>AWS Security Hub, Azure Sentinel, GCP SCC</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fas fa-lock"></i></div>
+                    <h3>Cryptography</h3>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 0%" data-width="75%"></div>
+                    </div>
+                    <p>PKI, SSL/TLS, Hash Analysis, Encryption</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hexagonal Skills Grid (Alternative Visual) -->
+    <section id="skills-hex" class="alt-section">
+        <div class="section-container">
+            <h2 class="section-title">// Tooling Expertise</h2>
+            <div class="hex-grid">
+                <div class="hex-item">
+                    <div class="hex-inner">
+                        <div class="hex-front">
+                            <i class="fas fa-eye"></i>
+                            <span>Splunk</span>
+                        </div>
+                        <div class="hex-back">Expert</div>
+                    </div>
+                </div>
+                <div class="hex-item">
+                    <div class="hex-inner">
+                        <div class="hex-front">
+                            <i class="fas fa-database"></i>
+                            <span>QRadar</span>
+                        </div>
+                        <div class="hex-back">Expert</div>
+                    </div>
+                </div>
+                <div class="hex-item">
+                    <div class="hex-inner">
+                        <div class="hex-front">
+                            <i class="fas fa-search-plus"></i>
+                            <span>Wireshark</span>
+                        </div>
+                        <div class="hex-back">Advanced</div>
+                    </div>
+                </div>
+                <div class="hex-item">
+                    <div class="hex-inner">
+                        <div class="hex-front">
+                            <i class="fas fa-skull-crossbones"></i>
+                            <span>Metasploit</span>
+                        </div>
+                        <div class="hex-back">Advanced</div>
+                    </div>
+                </div>
+                <div class="hex-item">
+                    <div class="hex-inner">
+                        <div class="hex-front">
+                            <i class="fas fa-bolt"></i>
+                            <span>Nmap</span>
+                        </div>
+                        <div class="hex-back">Advanced</div>
+                    </div>
+                </div>
+                <div class="hex-item">
+                    <div class="hex-inner">
+                        <div class="hex-front">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="hex-back">Expert</div>
+                    </div>
+                </div>
+                <div class="hex-item">
+                    <div class="hex-inner">
+                        <div class="hex-front">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Git/GitHub</span>
+                        </div>
+                        <div class="hex-back">Advanced</div>
+                    </div>
+                </div>
+                <div class="hex-item">
+                    <div class="hex-inner">
+                        <div class="hex-front">
+                            <i class="fas fa-dharmachakra"></i>
+                            <span>Kali Linux</span>
+                        </div>
+                        <div class="hex-back">Expert</div>
+                    </div>
+                </div>
+                <div class="hex-item">
+                    <div class="hex-inner">
+                        <div class="hex-front">
+                            <i class="fas fa-cloud"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="hex-back">Intermediate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="section-container">
+            <h2 class="section-title">// Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card" data-delay="0">
+                    <div class="cert-inner">
+                        <div class="cert-front">
+                            <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h3>CompTIA Security+</h3>
+                        </div>
+                        <div class="cert-back">
+                            <p>SY0-701</p>
+                            <p>Security fundamentals, network security, risk management</p>
+                            <span class="cert-date">Obtained: 2021</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card" data-delay="100">
+                    <div class="cert-inner">
+                        <div class="cert-front">
+                            <div class="cert-icon"><i class="fas fa-user-ninja"></i></div>
+                            <h3>CEH</h3>
+                        </div>
+                        <div class="cert-back">
+                            <p>Certified Ethical Hacker v12</p>
+                            <p>Penetration testing, vulnerability assessment, footprinting</p>
+                            <span class="cert-date">Obtained: 2022</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card" data-delay="200">
+                    <div class="cert-inner">
+                        <div class="cert-front">
+                            <div class="cert-icon"><i class="fas fa-key"></i></div>
+                            <h3>OSCP</h3>
+                        </div>
+                        <div class="cert-back">
+                            <p>OffSec Certified Professional</p>
+                            <p>Advanced penetration testing, exploit development</p>
+                            <span class="cert-date">Obtained: 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card" data-delay="300">
+                    <div class="cert-inner">
+                        <div class="cert-front">
+                            <div class="cert-icon"><i class="fas fa-brain"></i></div>
+                            <h3>Blue Team Level 1</h3>
+                        </div>
+                        <div class="cert-back">
+                            <p>SOC Analyst Level 1</p>
+                            <p>Security monitoring, alert triage, incident response</p>
+                            <span class="cert-date">Obtained: 2020</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card" data-delay="400">
+                    <div class="cert-inner">
+                        <div class="cert-front">
+                            <div class="cert-icon"><i class="fas fa-hard-hat"></i></div>
+                            <h3>GCIA</h3>
+                        </div>
+                        <div class="cert-back">
+                            <p>GIAC Certified Intrusion Analyst</p>
+                            <p>Network intrusion detection, analysis, and incident handling</p>
+                            <span class="cert-date">Obtained: 2022</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card" data-delay="500">
+                    <div class="cert-inner">
+                        <div class="cert-front">
+                            <div class="cert-icon"><i class="fas fa-cloud-shield-alt"></i></div>
+                            <h3>AWS Security</h3>
+                        </div>
+                        <div class="cert-back">
+                            <p>AWS Certified Security – Specialty</p>
+                            <p>Cloud security, data protection, incident response in AWS</p>
+                            <span class="cert-date">Obtained: 2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card" data-delay="600">
+                    <div class="cert-inner">
+                        <div class="cert-front">
+                            <div class="cert-icon"><i class="fas fa-search-dollar"></i></div>
+                            <h3>GCTI</h3>
+                        </div>
+                        <div class="cert-back">
+                            <p>GIAC Certified Threat Intelligence</p>
+                            <p>Threat intelligence analysis, collection, and reporting</p>
+                            <span class="cert-date">Obtained: 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="cert-card" data-delay="700">
+                    <div class="cert-inner">
+                        <div class="cert-front">
+                            <div class="cert-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h3>Splunk Core Certified</h3>
+                        </div>
+                        <div class="cert-back">
+                            <p>Splunk Core Certified Power User</p>
+                            <p>SPL queries, dashboards, alerts, data analysis</p>
+                            <span class="cert-date">Obtained: 2021</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-container">
+            <h2 class="section-title">// Projects & Research</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-delay="0">
+                    <div class="project-glow"></div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-crosshairs project-icon"></i>
+                            <span class="project-tag">Threat Hunting</span>
+                        </div>
+                        <h3>APT Detection Ruleset</h3>
+                        <p>A comprehensive Sigma rule library for detecting Advanced Persistent Threats across Windows, Linux, and cloud environments.</p>
+                        <div class="project-tags">
+                            <span>Sigma</span>
+                            <span>YARA</span>
+                            <span>MITRE ATT&CK</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Repository</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Writeup</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-delay="150">
+                    <div class="project-glow"></div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-shield-alt project-icon"></i>
+                            <span class="project-tag">Incident Response</span>
+                        </div>
+                        <h3>IR Playbook Automation</h3>
+                        <p>Python-based automation framework for incident response playbooks with SOAR integration capabilities.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>TheHive</span>
+                            <span>SOAR</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Repository</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Writeup</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-delay="300">
+                    <div class="project-glow"></div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-skull-crossbones project-icon"></i>
+                            <span class="project-tag">Malware Analysis</span>
+                        </div>
+                        <h3>Malware Sandbox Toolkit</h3>
+                        <p>Automated malware analysis environment with behavioral monitoring, API call tracing, and IOC extraction.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Cuckoo</span>
+                            <span>Reverse Engineering</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Repository</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Writeup</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-delay="450">
+                    <div class="project-glow"></div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-network-wired project-icon"></i>
+                            <span class="project-tag">Network Forensics</span>
+                        </div>
+                        <h3>Network Traffic Analyzer</h3>
+                        <p>PCAP analysis tool with automated threat detection, TLS fingerprinting, and protocol anomaly detection.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Scapy</span>
+                            <span>Wireshark</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Repository</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Writeup</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-delay="600">
+                    <div class="project-glow"></div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-vial project-icon"></i>
+                            <span class="project-tag">Purple Team</span>
+                        </div>
+                        <h3>Detection Engineering Lab</h3>
+                        <p>End-to-end detection engineering pipeline with attack simulation, rule generation, and testing framework.</p>
+                        <div class="project-tags">
+                            <span>Atomic Red Team</span>
+                            <span>Splunk</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Repository</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Writeup</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-delay="750">
+                    <div class="project-glow"></div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <i class="fas fa-bug project-icon"></i>
+                            <span class="project-tag">Vulnerability Assessment</span>
+                        </div>
+                        <h3>Automated Vuln Scanner</h3>
+                        <p>Custom vulnerability scanner with plugin architecture for network services, web apps, and cloud configs.</p>
+                        <div class="project-tags">
+                            <span>Nmap</span>
+                            <span>Python</span>
+                            <span>Nessus API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Repository</a>
+                            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-alt"></i> Writeup</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog / CTF Writeups Section -->
+    <section id="blog">
+        <div class="section-container">
+            <h2 class="section-title">// CTF Writeups & Blog</h2>
+            <div class="blog-grid">
+                <div class="blog-card" data-delay="0">
+                    <div class="blog-category">CTF Writeup</div>
+                    <h3>HackTheBox: "Cyber Apocalypse 2024"</h3>
+                    <p>A detailed walkthrough of privilege escalation, lateral movement, and domain dominance techniques.</p>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-tag"></i> Active Directory</span>
+                        <span><i class="fas fa-clock"></i> 15 min read</span>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-small">Read Writeup <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="blog-card" data-delay="150">
+                    <div class="blog-category">Threat Research</div>
+                    <h3>Analyzing APT29 CNA TTPs via Splunk</h3>
+                    <p>Diving into MITRE ATT&CK techniques used by APT29 with custom Splunk dashboards and detection rules.</p>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-tag"></i> APT Analysis</span>
+                        <span><i class="fas fa-clock"></i> 12 min read</span>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-small">Read Writeup <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="blog-card" data-delay="300">
+                    <div class="blog-category">Tutorial</div>
+                    <h3>Building a SIEM from Scratch with ELK</h3>
+                    <p>Step-by-step guide to building a security monitoring pipeline with Elasticsearch, Logstash, and Kibana.</p>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-tag"></i> SIEM</span>
+                        <span><i class="fas fa-clock"></i> 20 min read</span>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-small">Read Writeup <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="blog-card" data-delay="450">
+                    <div class="blog-category">CTF Writeup</div>
+                    <h3>TryHackMe: "Pickle Rick" & "Basic Pentesting"</h3>
+                    <p>Beginner-friendly walkthroughs covering web exploitation, enumeration, and basic privilege escalation.</p>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-tag"></i> Web Exploitation</span>
+                        <span><i class="fas fa-clock"></i> 10 min read</span>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-small">Read Writeup <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="blog-card" data-delay="600">
+                    <div class="blog-category">Malware Analysis</div>
+                    <h3>Reverse Engineering a Custom RAT with Python</h3>
+                    <p>Deep dive into unpacking and analyzing a custom Remote Access Trojan using dynamic and static analysis.</p>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-tag"></i> Malware Analysis</span>
+                        <span><i class="fas fa-clock"></i> 18 min read</span>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-small">Read Writeup <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="blog-card" data-delay="750">
+                    <div class="blog-category">Incident Response</div>
+                    <h3>Ransomware Response Playbook: Lessons Learned</h3>
+                    <p>Post-incident analysis and key takeaways from a real-world ransomware containment and recovery operation.</p>
+                    <div class="blog-meta">
+                        <span><i class="fas fa-tag"></i> Incident Response</span>
+                        <span><i class="fas fa-clock"></i> 14 min read</span>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-small">Read Writeup <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="blog-cta">
+                <a href="#" class="btn btn-primary"><i class="fas fa-rss"></i> View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-container">
+            <h2 class="section-title">// Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in hearing about new opportunities, collaborations, or just chatting about cybersecurity. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <a href="mailto:alex.mercer@email.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>alex.mercer@email.com</span>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn / Alex Mercer</span>
+                        </a>
+                        <a href="https://github.com/alexmercer" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub / alexmercer</span>
+                        </a>
+                        <a href="https://tryhackme.com/p/alexmercer" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <i class="fas fa-cube"></i>
+                            <span>TryHackMe / alexmercer</span>
+                        </a>
+                        <a href="https://hackthebox.com" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <i class="fas fa-crown"></i>
+                            <span>HackTheBox / alexmercer</span>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <i class="fab fa-twitter"></i>
+                            <span>@alexmercer_sec</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-bracket">&lt;</span>AM<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+            </div>
+            <p>Built with <i class="fas fa-heart" style="color: #ff003c;"></i> and Python</p>
+            <p class="footer-copy">&copy; 2024 Alex Mercer. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="assets/js/matrix.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
